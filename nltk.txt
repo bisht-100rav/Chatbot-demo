@@ -1,2 +1,5 @@
-punkt brown
+word_net
+porter_test
+reuters
+punkt
 stopwords
