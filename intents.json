@@ -1,0 +1,14 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Good morning!", "Hey! Good morning", "Hello there", "Greetings to you"],
+     "responses": ["Hello I'm Restrobot! How can I help you?", "Hi! I'm Restrobot. How may I assist you today?"]
+    },
+    {"tag": "book_table",
+     "patterns": ["Can I book a table?","I want to book a seat", "Can I book a seat?", "Could you help me book a table", "Can I reserve a seat?", "I need a reservation"],
+     "responses": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["I will leave now","See you later", "Goodbye", "Leaving now, Bye", "Take care"],
+     "responses": ["It's been my pleasure serving you!", "Hope to see you again soon! Goodbye!"]
+    }]
+  }
