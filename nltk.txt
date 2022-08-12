@@ -1,5 +1,3 @@
-word_net
-porter_test
-reuters
+wordnet
 punkt
 stopwords

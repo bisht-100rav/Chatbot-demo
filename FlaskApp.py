@@ -86,11 +86,8 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+
+model.load("model.tflearn")
     
 # Creating bag of words
 ############################################################################################
@@ -122,6 +119,7 @@ def get_bot_response():
     results = model.predict([bag_of_words(userText, words)])
     results_index = numpy.argmax(results)
     tag = labels[results_index]
+    print(tag)
     for tg in data["intents"]:
         if tg['tag'] == tag:
             response = tg['responses']
